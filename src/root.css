@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+.underline-effect {
+  position: relative;
+}
+
+.underline-effect::before{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 2px;
+  transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .underline-effect:hover::before{
+    left: 0px;
+    right: auto;
+    width: 100%;
+  }
+}
+
+.animateSvg {
+  stroke-dasharray: 34;
+  stroke-dashoffset: 34;
+  stroke-linecap: round;
+}
+
+.activeAnimateSvg {
+  stroke-dashoffset: 0;
+  transition: 1s;
+  transition-delay: 1s;
+}
