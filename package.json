@@ -10,7 +10,6 @@
     "@types/node": "^18.11.18",
     "autoprefixer": "^10.4.14",
     "esbuild": "^0.14.54",
-    "next-auth": "^4.19.2",
     "postcss": "^8.4.24",
     "prettier": "^3.0.0",
     "solid-start-node": "^0.2.19",
@@ -19,8 +18,6 @@
     "vite": "^4.1.4"
   },
   "dependencies": {
-    "@auth/core": "^0.5.1",
-    "@solid-auth/base": "^2.0.3",
     "@solidjs/meta": "^0.28.2",
     "@solidjs/router": "^0.8.2",
     "clsx": "^1.2.1",
